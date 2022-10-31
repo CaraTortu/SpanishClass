@@ -1,0 +1,13 @@
+version: "0.1"
+
+services:
+    php:
+        container_name: Class
+        image: php
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: base
+        ports:
+            - "${PORT}:80" 

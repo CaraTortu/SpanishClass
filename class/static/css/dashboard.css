@@ -1,0 +1,36 @@
+.white-text { color: white; }
+
+@keyframes animated_text {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0px 50%; }
+}
+
+.username {
+    background: linear-gradient(-45deg, #1647b3, #408ec2, #22bbcf, #3be9a0);
+    background-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+.pad-left {
+    margin-left: 10px;
+}
+
+.buttons-top {
+    margin-top: 10px;
+}
+
+video {
+    max-width: 100%;
+}
+
+audio {
+    min-width: 100%;
+}

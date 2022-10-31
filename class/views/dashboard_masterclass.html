@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" media="screen" />
+        <style>
+        .white-text { color: white; }
+        @keyframes animated_text {
+            0% { background-position: 0px 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0px 50%; }
+        }
+
+        .username {
+            background: linear-gradient(-45deg, #1647b3, #408ec2, #22bbcf, #3be9a0);
+            background-size: 300%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 10s ease-in-out infinite;
+            -moz-animation: animated_text 10s ease-in-out infinite;
+            -webkit-animation: animated_text 10s ease-in-out infinite;
+        }
+
+        .pad-left {
+            margin-left: 10px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/dashboard" class="navbar-brand pad-left">Clase!</a>
+                    <div class="navbar-nav">
+                        <div class="nav-item nav-link">|</div>
+                        <a href="/dashboard/units" class="nav-item nav-link">Unidades</a>
+                        <a href="/dashboard/masterclass" class="nav-item nav-link active">Masterclass</a>
+                        <div class="nav-item nav-link">|</div>
+                        <a href="/logout" class="nav-item nav-link">Cerrar sesión</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <span class="nav-item text-center align-middle white-text">¡Bienvenida <span class="username">{username}</span> !</span>
+                    </div>
+            </div>
+        </nav>
+
+        <h1>MASTERCLASS</h1>
+
+        <script src="/static/js/jquery-3.6.0.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+    </body>
+</html>
